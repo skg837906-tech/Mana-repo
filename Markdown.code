@@ -1,0 +1,34 @@
+# My Website Opener - Chrome Extension
+
+Simple Chrome Extension to open any website URL with one click.
+All code included in this README - no other file needed to understand.
+
+---
+
+## 📁 Project Structure
+
+MyExtension/
+├── manifest.json
+├── popup.html
+├── popup.js
+└── README.md
+
+---
+
+## 📄 File 1: manifest.json
+```json
+{
+  "manifest_version": 3,
+  "name": "My Website Opener",
+  "version": "1.0",
+  "description": "Open your website in one click",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": ["tabs"]
+}
